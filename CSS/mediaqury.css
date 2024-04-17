@@ -1,0 +1,290 @@
+/* large screens  */
+@media only screen and (max-width:1326px) {
+    body{
+        overflow-x: hidden;
+        
+    }
+    /* page 1 scroll button  */
+    .btn span button{
+        bottom:-150px;
+    
+        
+    }
+    #page-2 .pg-2-about .about h1 span::before{
+        top: 5px;
+        left: 10px;
+    width: 500px;
+    
+    }
+    #page-2 .pg-2-about .about h1{
+        margin-bottom: 8px;
+    }
+}
+
+/* meduim screens*/
+
+@media only screen and (max-width:1146px) {
+    html{
+        font-size: 62%;
+    }
+    /* page 1  */
+    #page-1{
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    
+.pg-1-left{
+    width: 60%;
+    overflow: visible;
+    margin-left: -40px;
+    
+}
+    .btn span button{
+            bottom: -700px;
+            left: 430px;
+
+    }
+
+    /* page 2 */
+
+#page-2 .pg-2-about{
+        flex-wrap: wrap-reverse;
+    }
+    #page-2 .pg-2-about .about h1 span::before{
+        top: 5px;
+        left: 10px;
+    width: 300px;
+    
+    }
+    #page-2 .pg-2-about .about h1{
+        margin-bottom: 8px;
+    }
+    
+
+    /* page 4  */
+
+    #page-4 #box-1{
+        flex-wrap:wrap ;
+    }
+    #page-4 #box-2{
+        flex-wrap: wrap-reverse;
+    }
+    #page-4 #box-3{
+        flex-wrap:wrap ;
+        
+    }
+    #page-4 #box-4{
+        flex-wrap: wrap-reverse;
+        
+    }
+    #page-4 #box-5{
+        flex-wrap:wrap ;
+        
+    }
+    #page-4 #box-6{
+        flex-wrap: wrap-reverse;
+        
+    }
+    #page-4 #box-7{
+        flex-wrap: wrap;
+    }
+    
+    .box img{
+        margin: 40px 0px;
+    }
+    .box-conten{
+        text-align: center;
+    }
+    .box-conten h1{
+        font-size: 5.3rem;
+    }
+
+    /* page 5  */
+
+    .pg-5-card-container{
+        flex-wrap: wrap ;
+    }
+
+}
+
+
+/* small screens  */
+@media only screen and (max-width:868px) {
+    /* navbar  */
+ .navbar #ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+   min-height: 100vh;
+    width: 100%;
+    background: #000;
+    top: -880%;
+    left: 0%;
+    bottom: 0%;
+    transition: all ease 0.7s ;
+
+ }
+ .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+margin-left: 0px;
+width: auto;
+}
+ .nav-links button{
+margin-right: 0px;
+
+
+ }
+ #show-menu{
+    display: block;
+ }
+ .icons{
+    z-index: 99;
+    /* position: absolute; */
+ }
+    .pg-1-right{
+        margin-right: auto;
+    
+    }
+    .pg-1-left{
+        margin-right:auto ;
+    }
+    .btn span button{
+        bottom: -700px;
+        left: 220px;
+margin-left: auto;
+    }
+    /* page 2  */
+    #page-2 .pg-2-about .about h1 span::before{
+        top: 5px;
+        left: 10px;
+    width: 300px;
+    
+    }
+    #page-2 .pg-2-about .about h1{
+        margin-bottom: 8px;
+    }
+}
+/* small screens  */
+ @media only screen and (max-width:770px) {
+    html{
+        font-size: 53%;
+    }
+    
+    /* scrool buton  */
+    .btn span button{
+    display: none;
+    }
+    /* about section  */
+    #page-2 .pg-2-about .about h1{
+        width: 500px;
+        margin: auto;
+    
+    }
+    #page-2 .pg-2-about .about h3{
+        width: 500px;
+        margin: auto;
+    
+    }
+    #page-2 .pg-2-about .about h1 span::before{
+        top: 2px;
+        left: 10px;
+    width: 300px;
+    
+    }
+    #page-2 .pg-2-about .about h1{
+        margin-bottom: 8px;
+    }
+    
+/* services section  */
+
+.box-conten h3{
+    width: 500px;
+    line-height: 25px;
+
+}
+} 
+/* Extra small screens  */
+@media only screen and (max-width:530px){
+html{
+    font-size: 45%;
+}
+/* page 1  */
+.pg-1-righ{
+    width: 100%;
+}
+.pg-1-left{
+    width: 100%;
+}
+.pg-1-right h1 span::before{
+    top: -17px;
+    left: -1px;  
+}
+.pg-1-right h2 span::before{
+    top: -17px;
+    left: -1px;
+    
+}
+.pg-1-right p{
+    width: 300px;
+  
+}
+#page-1 .pg-1-right h2{
+    width: 280px;
+}
+#page-1 .pg-1-left img{
+    width: 280px;
+    height: 300px;
+   margin-left:70px ;
+   margin-top: 80px;
+   margin-bottom: 20px;
+
+}
+#page-1 .pg-1-left::before{
+   top: 30px;
+   left: 25px;
+   width: 390px;
+   height: 390px;
+ 
+}
+.btn button{
+    padding:13px ;
+width: 150px;
+
+    
+}
+
+/* page 2 */
+/* about section  */
+#page-2 .pg-2-about .about h1{
+    width: 300px;
+    margin: auto;
+
+}
+#page-2 .pg-2-about .about h3{
+    width: 300px;
+    margin: auto;
+
+}
+
+#page-2 .pg-2-about .about h1 span::before{
+    top: 2px;
+    left: 8px;
+width: 300px;
+
+}
+#page-2 .pg-2-about .about h1{
+    margin-bottom: 8px;
+}
+/* services section  */
+
+.box-conten h3{
+width: 300px;
+line-height: 25px;
+
+}
+} 
+

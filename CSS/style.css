@@ -1,0 +1,749 @@
+/* css reset  */
+* {
+    margin: 0%;
+    padding: 0%;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-weight: bolder;
+    font-family: "Ganeral sans Meduim";
+    scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+/* navbar section start */
+.icons{
+    margin: 0;
+    padding: 0;
+     
+}
+.icons i{
+    color: white ;
+    
+}
+#show-menu {
+    font-size: 4rem;
+    margin-right: 25px;
+display: none;
+}
+
+#close-menu {
+    font-size: 4rem;
+    margin-right: 25px;
+  display: none;
+}
+
+.navbar {
+    background-color: black;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+.left-nav{
+    display: flex;
+}
+.right-nav h1 {
+    font-size: 3rem;
+    margin-left: 20px;
+    color: white;
+    
+}
+
+.right-nav h1::before {
+    content: "Saim Hayat";
+    position: absolute;
+    top: 18px;
+    left: 19px;
+    -webkit-text-stroke: 2px rgb(58, 228, 202);
+z-index: 99;
+}
+
+.nav-links button {
+    font-size: 1.6rem;
+    padding: 5px 5px;
+    width: 110px;
+    border-radius: 8px;
+    margin-right: 50px;
+    background-color: transparent;
+    box-shadow: 1px 1px white;
+    border: 2px solid rgb(58, 228, 202);
+
+}
+
+.nav-links button a {
+    color: rgb(58, 228, 202);
+}
+
+.nav-links button:hover {
+    background-color: rgb(58, 228, 202);
+
+}
+
+.nav-links button:hover a {
+    color: black;
+    font-weight: bolder;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+margin-left: 200px;
+width: 100%;
+}
+
+.nav-links ul {
+    margin-right: 150px;
+}
+
+.nav-links li a:hover {
+    border-bottom: 1px solid white;
+    transition: all ease-in-out 0.5s;
+    color: #3FE7D2;
+}
+
+.nav-links li a {
+    transition: all ease-in-out 0.5s;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+/* navbar section end  */
+/* cursor div start  */
+#cursor {
+    width: 17px;
+    height: 17px;
+    background-color: rgb(14, 228, 149);
+    position: fixed;
+    border-radius: 20px;
+    z-index: 7;
+}
+
+#crsr-blur {
+    mix-blend-mode: difference;
+    width: 220px;
+    height: 220px;
+    background-color: rgba(255, 255, 255, 0.573);
+    position: fixed;
+    border-radius: 110px;
+    filter: blur(100px);
+    z-index: 1;
+
+
+
+}
+
+/* cursor div end */
+/* page 1 section start  */
+#page-1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.pg-1-left {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    margin-left: 110px;
+}
+
+.pg-1-right {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    line-height: 60px;
+    padding: 22px 30px;
+    height: 100%;
+    width: 50%;
+
+}
+
+#page-1 .pg-1-right h1 {
+    margin-top: 60px;
+    font-size: 2.3rem;
+    text-align: left;
+}
+
+#page-1 .pg-1-right h1 span {
+    font-size: 3.8rem;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 2;
+    margin-left: 8px;
+}
+
+.pg-1-right h1 span::before {
+    content: "World";
+    position: absolute;
+    top: -10px;
+    left: -1px;
+    -webkit-text-stroke: 2px rgb(58, 228, 202);
+
+}
+
+#page-1 .pg-1-right h2 {
+    font-size: 2.8rem;
+    width: 700px;
+}
+
+#page-1 .pg-1-right h2 span {
+    font-size: 3.8rem;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 2;
+    margin: 0px 10px;
+
+}
+
+.pg-1-right h2 span::before {
+    content: "SAIM";
+    position: absolute;
+    top: -10px;
+    left: -1px;
+    -webkit-text-stroke: 2px rgb(58, 228, 202);
+}
+
+.pg-1-right p {
+    width: 500px;
+    line-height: 28px;
+    margin-left: 0px;
+    font-size: 1.9rem;
+}
+
+#page-1 .pg-1-left img {
+    margin-top: 90px;
+    width: 350px;
+    height: 500px;
+    margin-bottom: 40px;
+    position: relative;
+    margin-left: 140px;
+    /* z-index: 2; */
+}
+
+#page-1 .pg-1-left::before {
+    content: "";
+    background: url(/imgs/ring-imge.png) no-repeat center center/cover;
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    width: 600px;
+    height: 600px;
+    z-index: 2;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.btn button {
+    margin-top: 20px;
+    margin-left: -5px;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.4rem;
+    border: 2px solid rgb(58, 228, 202);
+
+}
+
+.btn button:hover {
+    background-color: rgb(58, 228, 202);
+    transition: all ease 0.5s;
+}
+
+.btn button:hover a {
+    color: black;
+    font-weight: 900;
+}
+
+.btn button a {
+    color: rgb(58, 228, 202);
+    font-weight: 900;
+}
+
+.btn span button {
+    position: absolute;
+    bottom: 30px;
+    left: 630px;
+
+
+}
+
+/* page 2 start  */
+#page-2 {
+    margin-top: 100px;
+    height: 100%;
+    width: 100%;
+    background: url(/bg.imgs/bg.2.jpg)no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+}
+
+#page-2 .pg-2-head h1 {
+    font-size: 6rem;
+    margin: 40px 0px;
+    color: white;
+    -webkit-text-stroke:2px  greenyellow ;
+
+}
+
+#page-2 .pg-2-about {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+
+}
+
+#page-2 .pg-2-about .about {
+    display: flex;
+    flex-direction: column;
+    line-height: 28px;
+    justify-content: space-between;
+    width: 700px;
+
+}
+
+#page-2 .pg-2-about .about h1 {
+    font-size: 3rem;
+    margin: 15px 0px;
+}
+
+#page-2 .pg-2-about .about h1 span {
+    font-size: 3.7rem;
+    color: white;
+    position: relative;
+}
+
+#page-2 .pg-2-about .about h1 span::before {
+    content: "Saim hayat";
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    -webkit-text-stroke: 2px rgb(22, 240, 215);
+    width: 500px;
+
+}
+
+#page-2 .pg-2-about .about h3 {
+    font-size: 1.6rem;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-weight: 900;
+    width: 700px;
+
+}
+.img{
+    height: 420px;
+    width: 400px;   
+}
+#page-2 .img img {
+    height: 100%;
+    width: 100%;
+}
+
+/* page 2 end  */
+/* pgae 3 start  */
+#page-3 {
+    margin-top: 100px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#page-3 .pg-3-head h1 {
+    font-size: 6rem;
+    margin: 40px 0px;
+    color: white;
+    -webkit-text-stroke:2px  greenyellow ;
+    text-align: center;
+
+
+}
+
+
+#page-3 .card-container {
+    margin-top: 50px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+    flex-flow: row wrap;
+    margin-bottom: 90px;
+
+}
+
+.card {
+    border-radius: 20px;
+    transition: all ease 0.5s;
+    height: 350px;
+    width: 350px;
+    background-color: green;
+    border: 1px solid black;
+    z-index: 5;
+
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.842);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    opacity: 0;
+    transition: all ease 0.5s;
+    border-radius: 20px;
+    border: 5px solid #3FE7D2;
+}
+.overlay i{
+    font-size: 70px;
+}
+.overlay h3 {
+
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.overlay h1 {
+    font-size: 3rem;
+    color: white;
+    -webkit-text-stroke: 1px greenyellow;
+}
+
+
+#card-1 {
+    background: url(/imgs/img-3-min.jpg)no-repeat center center/cover;
+}
+
+#card-2 {
+    background: url(/imgs/img-4-min.jpg)no-repeat center center/cover;
+}
+
+#card-3 {
+    background: url(/imgs/img-10-min.jpg)no-repeat center center/cover;
+}
+
+#card-4 {
+    background: url(/imgs/img-6-min.jpg)no-repeat center center/cover;
+}
+
+#card-5 {
+    background: url(/imgs/img-7-min.jpg)no-repeat center center/cover;
+}
+
+#card-6 {
+    background: url(/imgs/img-8-min.jpg)no-repeat center center/cover;
+}
+
+.overlay:hover {
+    opacity: 1;
+    transition: all ease 0.5s;
+}
+
+.card:hover {
+    transform: skewY(-4deg);
+    scale: 1.1;
+    transition: all ease 0.5s;
+
+}
+
+/* page 3 end  */
+/* page 4 start  */
+#page-4 {
+    margin-top: 100px;
+    height: 100%;
+    width: 100%;
+    background: url(/bg.imgs/bg.2.jpg)no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+#page-4 .pg-4-head h1 {
+    font-size: 6rem;
+    margin: 40px 0px;
+    color: white;
+    -webkit-text-stroke:2px  greenyellow ;
+
+}
+
+
+#page-4 .pg-4-boxes-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.pg-4-boxes-container img {
+    height: 300px;
+
+}
+
+.pg-4-boxes-container .box {
+    margin: 25px 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.pg-4-boxes-container .box-conten {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.box-conten h1 {
+    font-size: 4rem;
+    color: white;
+    margin: 10px 0px;
+    -webkit-text-stroke: 2px aqua;
+}
+
+.box-conten h3 {
+    width: 800px;
+    font-size: 2rem;
+    color: white;
+}
+
+/* page 4 end  */
+/* page 5 start  */
+#page-5 {
+    margin:80px 0px;
+    margin-top: 150px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: black;
+
+}
+
+#page-5 .pg-5-head h1 {
+    font-size: 6rem;
+    margin: 40px 0px;
+    color: white;
+    -webkit-text-stroke:2px  greenyellow ;
+
+}
+
+.pg-5-card-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pg-5-card {
+    height: 350px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    margin-bottom: 30px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.pg-5-card h1 {
+    font-size: 2.3rem;
+    z-index: 2;
+    font-weight: 900;
+
+}
+
+.pg-5-card h2 {
+    font-weight: 900;
+    z-index: 2;
+}
+
+.pg-5-card h2 img {
+    z-index: 2;
+    width: 250px;
+    height: 40px;
+}
+
+.pg-5-card h3 {
+    font-weight: 900;
+    text-align: center;
+    font-size: 1.5rem;
+    z-index: 2;
+}
+
+.pg-5-card img {
+    height: 100px;
+    width: 130px;
+    border-radius: 50px;
+    z-index: 2;
+}
+
+#pg-5-card-1 {
+    background: url(/testimonial-img/ts-bg.jpg)no-repeat center center/cover;
+}
+
+#pg-5-card-2 {
+    background: url(/testimonial-img/ts-bg.jpg)no-repeat center center/cover;
+}
+
+#pg-5-card-3 {
+    background: url(/testimonial-img/ts-bg.jpg)no-repeat center center/cover;
+}
+
+.pg-5-card::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0.4;
+
+
+
+}
+
+/* page 5 end  */
+
+/* pag 6  */
+
+#page-6{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+
+}
+
+#page-6>h1 {
+    text-align: center;
+    font-size: 6rem;
+    margin-bottom: 50px;
+    color: white;
+    -webkit-text-stroke:2px  greenyellow ;
+}
+
+.projects {
+    height: 150px;
+    width: 100%;
+    border-bottom: 4px solid white;
+    z-index: 5;
+}
+
+
+.projects h1 {
+    font-size: 3rem;
+color: white;
+-webkit-text-stroke:1px #3FE7D2;
+}
+
+.projects img {
+    height: 200px;
+    position: absolute;
+    opacity: 0;
+    object-fit: cover;
+    object-position: center;
+    transition: all linear 0.5s;
+    
+    
+}
+
+/* footer start  */
+footer {
+    margin-top: 80px;
+
+}
+
+#footer-page {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url(/bg.imgs/bg.2.jpg) center center/cover no-repeat;
+    padding-top: 50px;
+}
+
+#footer-page h4 {
+    font-size: 1.5rem;
+    margin-top: 40px;
+}
+
+.foter-container {
+    height: 100%;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.foter-container h1 {
+    font-size: 2.4rem;
+    color: white;
+    margin-bottom: 8px;
+    -webkit-text-stroke: 2px aqua;
+}
+
+.footer-links li a {
+    font-size: 1.7rem;
+    line-height: 22px;
+
+}
+
+.foter-container h3 {
+    font-size: 1.7rem;
+    line-height: 22px;
+}
+
+/* footer end  */
